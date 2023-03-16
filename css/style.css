@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+/*=================== Cores =================*/
+:root {
+    --primary: #EAA636;
+    --secondary: #545454;
+    --light: #FDF5EB;
+    --dark: #1E1916;
+}
+
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600 !important;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+
+.btb {
+  font-size: 16px;
+  padding: 15px 25px;
+  background-color: #489c79;
+  color: #FFF;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btb:hover {
+  transform: scale(1.05);
+  background-color: var(--branco);
+  color: #000;
+  border: none;
+}
+
+
+
+
+/* ====================== Cabecalho ===============*/
+.header-carousel .owl-carousel-inner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+}
+
+.cabeca {
+    height: ;
+}
+
+.header-h1 {
+    font-family: 'Clicker script', cursive;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+
+    .header-h1 {
+        font-size: 50px;
+    }
+
+    .cabeca img {
+        height: 100vh;
+        object-fit: cover;
+    }  
+
+
+    .header-carousel .owl-carousel-item {
+        position: relative;
+        min-height: 600px;
+    }
+
+    .header-carousel .owl-carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .header-carousel .owl-carousel-item p {
+        font-size: 16px !important;
+    }
+}
+
+.header-carousel .owl-nav {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: -40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-carousel .owl-nav::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    position: relative;
+    font-size: 40px;
+    color: var(--primary);
+    transition: .5s;
+    z-index: 1;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.page-header {
+    margin-bottom: 6rem;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+}
+
+
+/* ====================== DATA DE CASAMENTO ===================== */
+
+.wrapper {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    transform: translate(-50%, -50%);*/
+    background-color: #003840;
+    margin-bottom: 40px;
+}
+
+.wrapper .lados {
+    margin: 0 130px;
+}
+
+
+.heading {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.heading h1 {
+    text-shadow: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: #FFF;
+    font-family: 'Clicker script', cursive;
+}
+
+.heading h3 {
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+    box-shadow: rgba(0, 0, 0, 0.4);
+    padding: 8px 30px;
+    color: #FFF;
+    display: inline-block;
+    font-family: 'Clicker script', cursive;
+}
+
+.countdown {
+    /*width: 95vw;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    color: #FFF;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.box .num {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur12px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    border-radius: 0.1em;
+}
+
+/*span.num:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 100%;
+    width: 50%;
+    left: 0;
+}*/
+
+span.textt {
+    font-size: 1em;
+    background-color: #FFF;
+    color: #000;
+    display: block;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    bottom: 20px;
+    padding: 0.7em 0;
+    font-weight: 600;
+    border-radius: 0. 3em;
+    box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+/*================================== Fotos ===============================*/
+
+.foto-title {
+    font-size: 25px;
+    font-family: 'Clicker script', cursive;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+.foto-title img {
+    margin-top: 30px;
+    height: 110px;
+    width: 110px;
+}
+
+.foto-title h1 {
+    padding-top: 50px;
+    font-family: 'Clicker script', cursive;
+}
+
+.grid-gallery {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.grid-gallery .grid-item {
+    position: relative;
+    background-color: #efefef;
+    overflow: hidden;
+}
+
+.grid-gallery .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.grid-gallery .grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.grid-gallery .grid-item a {
+    cursor: zoom-in;
+}
+
+.grid-gallery .grid-item:nth-child(3n - 2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+    .grid-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+    }
+
+    .grid-gallery .grid-item:nth-child(3n - 2) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}
+
+
+
+/* ================== Cerimonia =================== */
+
+.fact-item {
+    transition: .5s;
+}
+
+.fact-item img {
+    height: 60px;
+    width: 60px;
+}
+
+.fact-item:hover {
+    margin-top: -10px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.fact-item .cerim-p {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Clicker script', cursive;
+    color: #000;
+}
+
+.fact-item .cerim-h1 {
+    font-size: 18px;
+    font-family: 'Poppins' sans-serif;
+    color: #000;
+    padding: 8px 0;
+}
+
+.fact-item .cerim-h2 {
+    font-size: 22px;
+    font-family: 'Clicker script', cursive;
+    color: #000;
+}
+
+
+
+
+
+/* ====================== Contacto ===================== */
+
+.contact {
+  margin: 80px 0;
+  color: #000;
+}
+
+.contact .sub-cont {
+  margin: 45px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact .contact-area {
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact .contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+
+.contact-item .contact-option {
+  background: #ffeff2;
+  color: #000;
+  padding: 30px 10px;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: 300ms ease-in-out;
+}
+
+
+
+.contact-item .contact-option h5 {
+  margin: 10px 0;
+}
+
+.contact-item .contact-option:hover {
+  background: transparent;
+  border-color: #489c79;
+  color: #000;
+}
+
+.contact-item .contact-option a {
+    color: #000;
+}
+
+.contact-item .contact-option i {
+  font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #ccc;
+    resize: none;
+    color: #000;
+}
+
+
+
+
+
+
+/*============= Testimonial =============*/
+.testimonial-carousel .owl-item .testimonial-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 22px;
+    color: var(--light);
+    background: var(--primary);
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--primary);
+    background: var(--dark);
+}
+
+
+/*================== Rodape =================*/
+
+.copyright {
+    background: #111111;
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .countdown {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .heading h3 {
+        font-size: 30px;
+    }
+
+    .box {
+        margin: auto;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .container .row .sobre-img img {
+        object-fit: cover;
+    }
+
+    .countdown {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .heading h1 {
+        font-size: 18pxpx;
+    }
+
+    .heading h3 {
+        font-size: 25px;
+    }
+
+    .box {
+        margin: auto;
+    }
+
+    .wrapper .lados {
+        margin: auto;
+    }
+
+    .wrapper .lados {
+        margin: none;
+    }
+
+    .heading h1 {
+        font-size: 16px;
+    }
+
+    .heading h3 {
+        font-size: 1.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
